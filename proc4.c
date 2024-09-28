@@ -14,7 +14,7 @@ int main(void)
     }
     else if (pid == 0) //child process
     {
-        //create directory using mkdir <directory name>
+        //delete directory using mkdir <directory name>
         execl("/bin/rm", "rm", "-r", "OS", NULL); 
 
         //print "Unsuccessful" if created unsuccessfully

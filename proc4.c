@@ -14,11 +14,11 @@ int main(void)
     }
     else if (pid == 0) //child process
     {
-        //create directory using mkdir <directory name>
-        execl("/bin/mkdir", "mkdir", "OperatingSystem", NULL); 
+        //delete directory using mkdir <directory name>
+        execl("/bin/rm", "rm", "-r", "OS", NULL); 
 
-        //print "Successful" if created successfully
-        printf("Successful!\n");
+        //print "Unsuccessful" if created unsuccessfully
+        printf("Unsuccessful!\n");
         exit(0);
         
     }

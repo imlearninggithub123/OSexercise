@@ -12,7 +12,7 @@ int main(void)
         printf("pid < 0");
         exit(1);
     }
-    else if (pid == 0) //child process
+    else if (pid == 0) //child processes
     {
         //create directory using mkdir <directory name>
         execl("/bin/mkdir", "mkdir", "OperatingSystem", NULL); 
